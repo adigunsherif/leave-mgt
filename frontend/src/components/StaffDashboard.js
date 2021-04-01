@@ -34,7 +34,7 @@ function StaffDashboard (props) {
             <td>{item.type_of_leave} </td>
             <td>{item.start_date} </td>
             <td>{item.end_date} </td>
-            <td>{item.resumption_date} days </td>
+            <td>{item.resumption_date} </td>
             <td>{item.initial_balance} days </td>
             <td>{item.after_balance} days </td>
             <td>{item.status}</td>
