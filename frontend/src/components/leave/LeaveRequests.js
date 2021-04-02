@@ -58,7 +58,7 @@ function LeaveRequest (props) {
                 
             </h3>
 
-            <Table>
+            <Table bordered>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -91,5 +91,6 @@ function LeaveRequest (props) {
     )
 }
 
-
 export default LeaveRequest;
+
+

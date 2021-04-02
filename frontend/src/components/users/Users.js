@@ -40,7 +40,7 @@ function Staff(props) {
                 <Button color="danger" onClick={
                     () => setDeleteModal({stat:true, id:item.id})
                 }>
-                    Delete <span className="fa fa-delete"></span>
+                    Delete <span className="fa fa-close"></span>
                 </Button>
             </td>
         </tr>
@@ -52,12 +52,12 @@ function Staff(props) {
             <h3>
                 Manage Staff 
                 <Button color="success" className="float-right" onClick={()=> setNewUser(true)}>
-                    Add new Staff
+                    Add new Staff <span className="fa fa-plus"></span>
                 </Button> 
             </h3>
 
 
-            <Table>
+            <Table bordered>
                 <thead>
                     <tr>
                         <th>#</th>

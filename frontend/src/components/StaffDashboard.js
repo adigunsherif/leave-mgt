@@ -54,7 +54,7 @@ function StaffDashboard (props) {
                 </Button> 
             </h4>
 
-            <Table>
+            <Table bordered>
                 <thead>
                     <tr>
                         <th>#</th>

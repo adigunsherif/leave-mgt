@@ -26,9 +26,9 @@ function Header(props) {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
+      <Navbar color="" dark expand="md" className="bg-green">
         <Link to="/">
-          <NavbarBrand>Leave Management System</NavbarBrand>
+          <NavbarBrand><img src={`${process.env.PUBLIC_URL}/egbinlogo.png`} alt="Logo"  className="s_img"/> Leave Management System</NavbarBrand>
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
