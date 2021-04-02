@@ -33,7 +33,7 @@ function LoginForm () {
                     localStorage.setItem('token', json.token);
                     localStorage.setItem('isadmin', json.is_superuser);
                     localStorage.setItem('uid', json.uid);
-                    window.location.reload()
+                    window.location.href = '/'
                 })
             }else {
                 setMessage('Invalid Staff ID or Password')
@@ -41,7 +41,10 @@ function LoginForm () {
         
             
         }).then(()=>setLoading(false))
-        .catch(() => setMessage('An error occured. Please try again'))
+        .catch(() => {
+            setMessage('An error occured. Please try again');
+            setLoading(false)
+        })
     }
 
    
